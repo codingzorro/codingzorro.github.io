@@ -94,9 +94,11 @@ colleagues will need:
 lein uberjar
 ```
 
-That's it! Java programmer now just have to add the jar file (called something
-like `com.example.cl4j/target/com.example.cl4j-0.1.0-SNAPSHOT-standalone.jar`)
-when building and running their program.
+## That's it!
+You're done! Java programmers now just have to add the jar file (called
+something like
+`com.example.cl4j/target/com.example.cl4j-0.1.0-SNAPSHOT-standalone.jar`) when
+building and running their program.
 
 Calling your `plus` function in a Java program is pretty conventional:
 
