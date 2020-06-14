@@ -1,12 +1,3 @@
----
-Title: Clojure & Java Interop
-Description: How to infiltrate a Java shop
-Author: Jorge Duenas
-Date: 2020-05-12
-Robots: noindex,nofollow
-Template: blog-index
----
-
 # Sharing Clojure code with Java developers
 
 Here are the five easy steps to deliver a function written in Clojure so that
@@ -119,27 +110,4 @@ public class Client {
         System.out.println(cl4j.plus(4, 4));
     }
 }
-```
-
-
-### 6 - Compile and run your program
-```
-package com.example.something;
-
-import com.example.cl4j;
-
-public class Client {
-    public static void main(String [] args) {
-        System.out.println(cl4j.plus(4, 4));
-    }
-}
-```
-
-```
-$ javac -cp ../com.example.cl4j/target/com.example.cl4j-0.1.0-SNAPSHOT-standalone.jar -d . Client.java
-
-# note: the classpath has two elements
-$ java -cp .:../com.example.cl4j/target/com.example.cl4j-0.1.0-SNAPSHOT-standalone.jar com.example.something.Client
-
-(plus 4 4): 8
 ```
