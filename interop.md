@@ -1,5 +1,6 @@
 # Sharing Clojure code with Java developers
 
+It is probably a matter of taste, but the
 Here are the five easy steps to deliver a function written in Clojure so that
 Java programmers can call it as if were a function written in Java and included
 in a .jar file:
@@ -113,3 +114,6 @@ public class Client {
     }
 }
 ```
+
+> **Credits**: this page is based on [the answer provided by StackOverflow user
+> clartaq](https://stackoverflow.com/questions/2181774/calling-clojure-from-java)
